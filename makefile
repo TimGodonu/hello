@@ -1,4 +1,5 @@
 install:
+pip install --upgrade pip &&\
 	pip install -r requirements.txt
 
 #test:
@@ -7,6 +8,6 @@ install:
 
 
 lint:
-	pylint --disable=R,C myrepolib cli web
+	pylint --disable=R,C hello.py
 
 all: install lint test
